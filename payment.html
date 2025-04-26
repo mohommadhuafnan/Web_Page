@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+    <link rel="icon" href="../images/logo.png" />
+    <link rel="stylesheet" href="../css/payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+ <!------------------------------------------------Header ----------------------------------------------->
+    <div id="datetime">
+        <script>
+            function updateDateTime() {
+                const now = new Date();
+                const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
+                document.getElementById('datetime').textContent = now.toLocaleString('en-US', options);
+            }
+
+            // Update date and time every second
+            setInterval(updateDateTime, 1000);
+            // Initial call to display immediately on load
+            updateDateTime();
+        </script>
+    </div>
+
+    
+    <section id="Home">
+        <nav>
+            <div class="logo">
+                <img src="../images/logo.png">
+            </div>
+
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallary.html">Gallary</a></li>
+                <li><a href="Review.html">Review</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+        </nav>
+ <!------------------------------------------------Order----------------------------------------------->
+        <div class="order" id="Order">
+            <h1><span>pay</span>Now</h1>
+
+            <div class="order_main">
+
+                <div class="order_image">
+                    <img src="../images/order_image.png">
+                </div>
+
+                <form action="" class="payment">
+                    <div class="rows">
+                        <div class="column">
+
+
+                        <div class="column">
+                            <h3 class="title">Payment</h3>
+                            <div class="input-box">
+                                <span>cards accept:</span>
+                                <img src="../images/cardpayment.jpg" alt="">
+                              
+                            </div>
+                            <div class="input-box">
+                                <span>Name on card:</span>
+                                <input type="text" placeholder="m.n.m Anshaf">
+                            </div>
+                            <div class="input-box">
+                                <span>credit card Number:</span>
+                                <input type="Number" placeholder="4693 4206 9623 8462">
+                            </div>
+                            <div class="input-box">
+                                <span>Exp. Months:</span>
+                                <input type="text" placeholder="August">
+                            </div>
+                            <div class="flex">
+                                <div class="input-box">
+                                    <span>Exp.Year:</span>
+                                    <input type="number" placeholder="2026">
+                                </div>
+                                <div class="input-box">
+                                    <span>CVV:</span>
+                                    <input type="number" placeholder="123">
+                                </div>
+
+
+                               
+                            </div><br><br>
+
+                            
+                            <a href="paymentsuccessful.html" onclick="showconfirm()" class="order_btn">PAY NOW</a>
+                            
+                            <script>
+                                function showconfirm(){
+                                   let order_btn = confirm ("please confirm your payment and click ok button")
+                               }  
+                          
+                           </script>
+
+                            
+                        </div>
+                    </div>
+                    
+                </form>
+
+            </div>
+
+        </div>
+
+        <!-------------------------------------------------Footer----------------------------------------->
+
+        <footer>
+            <div class="footer_main">
+
+                <div class="footer_tag">
+                    <h2>Location</h2>
+                    <p>Sri Lanka</p>
+                    <p>USA</p>
+                    <p>India</p>
+                    <p>Japan</p>
+                    <p>Italy</p>
+                </div>
+
+                <div class="footer_tag">
+                    <h2>Quick Link</h2>
+                    <p><a href="home.html">Home</a></p>
+                    <p><a href="about.html">About</a></p>
+                    <p><a href="contact.html">contact</a></p>
+                    <p><a href="gallary.html">Gallary</a></p>
+                    <p><a href="Review.html">Review</a></p>
+                    <p><a href="order.html">Order</a></p>
+                    
+                </div>
+
+
+                <div class="footer_tag">
+                    <h2>Contact</h2>
+                    <p>+94 12 3456 789</p>
+                    <p>+94 25 5568456</p>
+                    <p>johndeo123@gmail.com</p>
+                    <p>foodshop123@gmail.com</p>
+                </div>
+
+                <div class="footer_tag">
+                    <h2>Our Service</h2>
+                    <p>Fast Delivery</p>
+                    <p>Easy Payments</p>
+                    <p>24 x 7 Service</p>
+                </div>
+
+
+            </div>
+
+            <p class="end">Design by<span><i class="fa-solid fa-face-grin"></i> MR. Anshaf</span></p>
+
+        </footer>
+
+        </div>
+    </section>
+</body>
+
+</html>

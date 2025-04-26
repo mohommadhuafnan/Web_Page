@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+    <link rel="icon" href="../images/logo.png" />
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+<!----------------------------------------------------Header---------------------------------------------------->
+
+    <div id="datetime">
+        <script>
+            function updateDateTime() {
+                const now = new Date();
+                const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
+                document.getElementById('datetime').textContent = now.toLocaleString('en-US', options);
+            }
+
+            // Update date and time every second
+            setInterval(updateDateTime, 1000);
+            // Initial call to display immediately on load
+            updateDateTime();
+        </script>
+    </div>
+    
+    <section id="Home">
+        <nav>
+            <div class="logo">
+                <img src="../images/logo.png">
+            </div>
+
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html" style="color: red;">About</a></li>
+                <li><a href="gallary.html">Gallary</a></li>
+                <li><a href="Review.html">Review</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+        </nav>
+<!----------------------------------------------------About US ---------------------------------------------------->
+
+        <div class="about" id="About">
+            <div class="about_main">
+
+                <div class="image">
+                    <img src="../images/aboutimg.png">
+                </div>
+
+                <div class="about_text">
+                    <h1><span>About</span>Us</h1>
+                    <h3>Why Choose us?</h3>
+                    <p>
+                        At Juice bar, we are committed to serving you the freshest and tastiest juices, manufactured 
+                        with the richest ingredients. Our juice bar outstands due to its focus on health, taste, and 
+                        sustainability. We choose fruits, vegetables, and organic produce of very superior quality; 
+                        hence, every drink has a rich nutrient profile and flavors. Whether you need detoxing, energizing, 
+                        or just something delicious and refreshing, we have got something for everyone. With a menu to suit 
+                        most dietary needs, from vegan to gluten-free, we try to meet your requirements. Plus, our eco-friendly
+                         practices and support for local farmers make every sip feel even better. Come to us for that refreshing 
+                         feel which not only rejuvenates your body but also contributes to the well-being of our planet.
+                    </p>
+                </div>
+
+            </div>
+
+            <a href="#" class="about_btn">Order Now</a>
+
+        </div>
+<!-------------------------------------------------Team------------------------------------------------->
+
+        <div class="team">
+            <h1>Our<span>Team</span></h1>
+
+            <div class="team_box">
+                <div class="profile">
+                    <img src="../images/team1.jpg">
+
+                    <div class="info">
+                        <h2 class="name">Chef</h2>
+                        <p class="bio"> melding years of experience in the culinary 
+                                       world with a deep understanding of health and nutrition.</p>
+
+                        <div class="team_icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="profile">
+                    <img src="../images/team3.jpg">
+
+                    <div class="info">
+                        <h2 class="name">Chef</h2>
+                        <p class="bio">melding years of experience in the culinary 
+                            world with a deep understanding of health and nutrition.</p>
+
+                        <div class="team_icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="profile">
+                    <img src="../images/team2.jpg">
+
+                    <div class="info">
+                        <h2 class="name">Chef</h2>
+                        <p class="bio">melding years of experience in the culinary 
+                            world with a deep understanding of health and nutrition.</p>
+
+                        <div class="team_icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="profile">
+                    <img src="../images/team4.jpg">
+
+                    <div class="info">
+                        <h2 class="name">Chef</h2>
+                        <p class="bio">melding years of experience in the culinary 
+                                       world with a deep understanding of health and nutrition.</p>
+
+                        <div class="team_icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    
+
+
+
+
+        <!-----------------------------------------Footer------------------------------------->
+    
+        <footer>
+            <div class="footer_main">
+
+                <div class="footer_tag">
+                    <h2>Location</h2>
+                    <p>Sri Lanka</p>
+                    <p>USA</p>
+                    <p>India</p>
+                    <p>Japan</p>
+                    <p>Italy</p>
+                </div>
+
+                <div class="footer_tag">
+                    <h2>Quick Link</h2>
+                    <p><a href="home.html">Home</a></p>
+                    <p><a href="about.html">About</a></p>
+                    <p><a href="contact.html">contact</a></p>
+                    <p><a href="gallary.html">Gallary</a></p>
+                    <p><a href="Review.html">Review</a></p>
+                    <p><a href="order.html">Order</a></p>
+
+                </div>
+
+
+                <div class="footer_tag">
+                    <h2>Contact</h2>
+                    <p>+94 12 3456 789</p>
+                    <p>+94 25 5568456</p>
+                    <p>johndeo123@gmail.com</p>
+                    <p>foodshop123@gmail.com</p>
+                </div>
+
+                <div class="footer_tag">
+                    <h2>Our Service</h2>
+                    <p>Fast Delivery</p>
+                    <p>Easy Payments</p>
+                    <p>24 x 7 Service</p>
+                </div>
+            </div>
+
+            <p class="end">Design by<span><i class="fa-solid fa-face-grin"></i> MR. Anshaf</span></p>
+
+        </footer>
+    </section>
+
+
+</body>
+
+</html>

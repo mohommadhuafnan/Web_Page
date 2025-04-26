@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+    <link rel="icon" href="../images/logo.png" />
+    <link rel="stylesheet" href="../css/paymentsuccessful.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+ <!------------------------------------------------Header ----------------------------------------------->
+    <div id="datetime">
+        <script>
+            function updateDateTime() {
+                const now = new Date();
+                const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
+                document.getElementById('datetime').textContent = now.toLocaleString('en-US', options);
+            }
+
+            // Update date and time every second
+            setInterval(updateDateTime, 1000);
+            // Initial call to display immediately on load
+            updateDateTime();
+        </script>
+    </div>
+
+    
+    <section id="Home">
+        <nav>
+            <div class="logo">
+                <img src="../images/logo.png">
+            </div>
+
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallary.html">Gallary</a></li>
+                <li><a href="Review.html">Review</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+        </nav>
+ <!------------------------------------------------Payments---------------------------------------------->
+
+        <div class="Payments"><br><br>
+            <h1>You payment detials</h1>
+            <div class="successfullpayment">
+                
+                <div class=" box-shadow">
+                    <i class="fa-solid fa-check"></i>
+                    <h2> Payment Successfull</h2>
+                    <h3>your online payment successfully completed</h3>
+                    <h5>Thank you for your order<br>
+
+                        We’ve received your order and are processing it now. You’ll <br>
+                        receive a confirmation email with all the details shortly. <br>
+                        
+                        Your support means the world to us. We can't wait to get your order to you!<br>
+                        
+                        If you have any questions or need assistance, feel free to contact our customer support team at 0729660756.</h5>
+                        
+                        <h4>Thanks again for shopping with juice bar!</h4>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-----------------------------------------------Footer------------------------------------>
+
+        <footer>
+            <div class="footer_main">
+
+                <div class="footer_tag">
+                    <h2>Location</h2>
+                    <p>Sri Lanka</p>
+                    <p>USA</p>
+                    <p>India</p>
+                    <p>Japan</p>
+                    <p>Italy</p>
+                </div>
+
+                <div class="footer_tag">
+                    <h2>Quick Link</h2>
+                    <p><a href="home.html">Home</a></p>
+                    <p><a href="about.html">About</a></p>
+                    <p><a href="contact.html">contact</a></p>
+                    <p><a href="gallary.html">Gallary</a></p>
+                    <p><a href="Review.html">Review</a></p>
+                    <p><a href="order.html">Order</a></p>
+                    
+                </div>
+
+                <div class="footer_tag">
+                    <h2>Contact</h2>
+                    <p>+94 12 3456 789</p>
+                    <p>+94 25 5568456</p>
+                    <p>johndeo123@gmail.com</p>
+                    <p>foodshop123@gmail.com</p>
+                </div>
+
+                <div class="footer_tag">
+                    <h2>Our Service</h2>
+                    <p>Fast Delivery</p>
+                    <p>Easy Payments</p>
+                    <p>24 x 7 Service</p>
+                </div>
+
+
+            </div>
+
+            <p class="end">Design by<span><i class="fa-solid fa-face-grin"></i> MR. Anshaf</span></p>
+        </footer>
+
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,353 @@
+/*--------------------------------------------Header----------------------------------------*/
+
+#datetime{
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background-attachment: fixed;
+    background-color:orange;
+    color: aliceblue;
+    padding: 10px;
+    margin-top:1px;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    justify-content: space-around;
+    z-index: 1000;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    margin-top: 40px;
+    right: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+section nav .logo img{
+    width: 100px;
+    cursor: pointer;
+    margin: -10px 0;
+}
+
+section nav ul{
+    list-style: none;
+}
+
+section nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+section nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+}
+
+section nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    transition: 0.2s linear;
+}
+
+section nav ul li a:hover::after{
+    width: 100%;
+}
+
+section nav ul li a:hover{
+    color: #fac031;
+}
+
+section nav .icon i{
+    font-size: 18px;
+    color: #000;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section nav .icon i:hover{
+    color: #fac031;
+}
+
+
+/*--------------------------------------------Order----------------------------------------*/
+.order{
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+    background-image: url(image/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.order h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 55px;
+    margin-top: 50px;
+}
+
+.order h1 span{
+    color: #fac031;
+    margin-right: 15px;
+    font-family: mv boli;
+}
+
+.order h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.order .order_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.order .order_main .order_image img{
+    width: 600px;
+}
+
+@media screen and (max-width: 800px) {
+    .order .order_main .order_image img{
+         width: 400px;
+         margin-bottom: 1000px;
+       
+        
+        
+    }  
+}  
+
+/*--------------------------------------------Billing----------------------------------------*/
+.billing{
+    background-color: #f80808;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.billing.css{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',' sans-serif';
+}
+
+.container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #cfcfcf;
+    padding: 25px;
+
+}
+
+.container1 form{
+    width: 700px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .payment{
+        margin-left: -350px;
+         
+        
+        
+    }  
+}  
+
+
+form .rows{
+    display: flex;
+    gap:50px;
+    flex: warp;
+
+}
+.rows .column{
+    flex: 1 1 250px;
+
+}
+
+.column .title{
+    font-size: 20px;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 5PX;
+}
+
+.column .input-box{
+    margin: 15px 0;
+    
+}
+.input-box span{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input-box input{
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.column .flex{
+    display: flex;
+    gap: 50px;
+}
+
+.flex .input-box {
+    margin-top: 5px;
+}
+.btn{
+    width: 15%;
+    padding: 12px;
+    background-color: #8175d3;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 17px;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.order_btn{
+    text-decoration: none;
+    background-color: green;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+    max-width: 100px;
+}
+
+
+
+/*--------------------------------------------footer---------------------------------------*/
+ footer{
+        width: 100%;
+        padding: 30px 0 0 20px;
+        background:#cfcfcf ;
+        clear: both;
+        
+        
+}
+@media screen and (max-width: 800px) {
+    footer{
+        margin-top: -350px;
+       
+        
+        
+    }  
+}  
+
+footer .footer_main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+}
+
+footer .footer_main .footer_tag{
+    text-align: center;
+}
+
+footer .footer_main .footer_tag h2{
+    color: #000;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+footer .footer_main .footer_tag p{
+    margin: 10px 0;
+}
+
+.footer_tag a {
+    text-decoration: none;
+    color: #000;
+}
+
+.footer_tag a:hover{
+    background-color: yellow;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+footer .footer_main .footer_tag i{
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+footer .footer_main .footer_tag i:hover{
+    color: #fac031;
+}
+
+footer .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+footer .end span{
+    color: #fac031;
+    margin-left: 10px;
+}
+
+::-webkit-scrollbar{
+    width: 13px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 15px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-thumb{
+    background: #fac031;
+    border-radius: 15px;
+}

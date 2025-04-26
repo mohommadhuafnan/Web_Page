@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+    <link rel="icon" href="../images/logo.png" />
+    <link rel="stylesheet" href="../css/review.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+ <!------------------------------------------------Header ----------------------------------------------->
+    <div id="datetime">
+        <script>
+            function updateDateTime() {
+                const now = new Date();
+                const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
+                document.getElementById('datetime').textContent = now.toLocaleString('en-US', options);
+            }
+
+            // Update date and time every second
+            setInterval(updateDateTime, 1000);
+            // Initial call to display immediately on load
+            updateDateTime();
+        </script>
+    </div>
+
+
+    <section id="Home">
+        <nav>
+            <div class="logo">
+                <img src="../images/logo.png">
+            </div>
+
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallary.html">Gallary</a></li>
+                <li><a href="Review.html" style="color: red;">Review</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+        </nav>
+
+ <!------------------------------------------------Customer review----------------------------------------------->
+        <div class="review" id="Review">
+            <h1>Customer<span>Review</span></h1>
+
+            <div class="review_box">
+                <div class="review_card">
+
+                    <div class="review_profile">
+                        <img src="../images/costomer_img1.jpeg">
+                    </div>
+
+                    <div class="review_text">
+                        <h2 class="name">Amelia</h2>
+
+                        <div class="review_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+
+                        <div class="review_social">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+
+                        <p>
+                            the juice bar is a great place for quick, healthy eats, with a great vibe
+                            and excellent service. Others say the veggie sandwich and booster shots are
+                            vegan-customer favorites."The juices are always so fresh and flavorful. I love that I can
+                            taste the
+                            quality ingredients."
+                            "The combination of fruits and vegetables is perfect—just the right amount of sweetness and
+                            tang!"
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="review_card">
+
+                    <div class="review_profile">
+                        <img src="../images/costomer_img2.jpeg">
+                    </div>
+
+                    <div class="review_text">
+                        <h2 class="name">John Deo</h2>
+
+                        <div class="review_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+
+                        <div class="review_social">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+
+                        <p>
+                            the smoothies are great and tasty, but the place is pricey and the drinks take a long time
+                            to make.
+                            Others say the staff are nice and you get a free shake after a few trips
+                            "I love that this juice bar offers so many healthy options. It's great to find a place that
+                            focuses on wellness!"
+                            "The smoothies are packed with vitamins and make me feel energized after a workout."
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="review_card">
+
+                    <div class="review_profile">
+                        <img src="../images/costomer_img3.jpeg">
+                    </div>
+
+                    <div class="review_text">
+                        <h2 class="name">Charlotte</h2>
+
+                        <div class="review_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+
+                        <div class="review_social">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+
+                        <p>
+                            the juice bar has a great variety of juices, but the prices are on the higher side. Others
+                            say the seasonal
+                            and mixed fruit parfaits are a must try, and the fruit salads are very cheap and of good
+                            quality
+                            "The staff is always so friendly and helpful. They explain the menu in a way that's easy to
+                            understand."
+                            "Fast service and a welcoming atmosphere. I always look forward to visiting!"
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="review_card">
+
+                    <div class="review_profile">
+                        <img src="../images/costomer_img4.jpeg">
+                    </div>
+
+                    <div class="review_text">
+                        <h2 class="name">Asher</h2>
+
+                        <div class="review_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+
+                        <div class="review_social">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+
+                        <p>
+                            it's important to be honest and give an accurate portrayal of your experience. This helps
+                            other customers make
+                            informed decisions and helps the business improve its services
+                            "I appreciate the ability to customize my juice with add-ons like chia seeds, protein, or
+                            spirulina."
+                            "The menu has a lot of unique juice combinations that I can’t find anywhere else!"
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!--Footer-->
+
+            <footer>
+                <div class="footer_main">
+
+                    <div class="footer_tag">
+                        <h2>Location</h2>
+                        <p>Sri Lanka</p>
+                        <p>USA</p>
+                        <p>India</p>
+                        <p>Japan</p>
+                        <p>Italy</p>
+                    </div>
+
+                    <div class="footer_tag">
+                        <h2>Quick Link</h2>
+                        <p><a href="home.html">Home</a></p>
+                        <p><a href="about.html">About</a></p>
+                        <p><a href="contact.html">contact</a></p>
+                        <p><a href="gallary.html">Gallary</a></p>
+                        <p><a href="Review.html">Review</a></p>
+                        <p><a href="order.html">Order</a></p>
+
+                    </div>
+
+                    <div class="footer_tag">
+                        <h2>Contact</h2>
+                        <p>+94 12 3456 789</p>
+                        <p>+94 25 5568456</p>
+                        <p>johndeo123@gmail.com</p>
+                        <p>foodshop123@gmail.com</p>
+                    </div>
+
+                    <div class="footer_tag">
+                        <h2>Our Service</h2>
+                        <p>Fast Delivery</p>
+                        <p>Easy Payments</p>
+                        <p>24 x 7 Service</p>
+                    </div>
+
+
+
+                </div>
+
+                <p class="end">Design by<span><i class="fa-solid fa-face-grin"></i> MR. Anshaf</span></p>
+
+            </footer>
+        </div>
+    </section>
+</body>
+
+</html>
